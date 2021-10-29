@@ -1,0 +1,141 @@
+body, html{
+    100vh;
+}
+
+body{
+
+    background-color: hsl(204, 43%, 93%);
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: white;
+
+
+}
+
+h2{
+    font-size: 1.5rem;
+    color: hsl(179, 62%, 43%);
+}
+
+.lime-green-text{
+    color: hsl(71, 73%, 54%);
+
+}
+
+.light-grey-text{
+    color: hsl(218, 22%, 67%);
+}
+
+ul{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+#monthly-subscription-fee{
+    margin-top: 30px;
+}
+
+.fee-text{
+    display: inline;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.light-opacity-text{
+    display: inline;
+ opacity: .7;
+}
+
+
+    
+        #grid{
+    
+        position: relative;
+        margin: 100px auto;
+        height: auto;
+        width: 40%;
+        display: grid;
+        grid-template-areas: "a a"
+                             "b c";
+        grid-template-rows: 1fr, 1fr;
+        grid-template-columns: 1fr, 1fr;
+        filter: drop-shadow(1px 10px 10px #c5cadb);
+    }
+
+
+.item{
+    border: 0px;
+    padding: 35px;
+}
+
+.a{
+    grid-area: a;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.b{
+    grid-area: b;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+}
+
+.c{
+    grid-area: c;
+    background-color:hsl(179, 83%, 43%);
+    border-bottom-right-radius: 10px;
+}
+
+button{
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5%;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-top: 35px;
+    filter: drop-shadow(1px 10px 10px #0000002c);
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    #grid{
+    
+    position: relative;
+    margin: 100px auto;
+    height: auto;
+    width: 90%;
+    display: grid;
+    grid-template-areas: "a"
+                         "b" 
+                         "c";
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: 100%;
+    filter: drop-shadow(1px 10px 10px #c5cadb);
+}
+
+.b{
+    grid-area: b;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 0px;
+}
+
+.c{
+    grid-area: c;
+    background-color:hsl(179, 83%, 43%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+    
+}
